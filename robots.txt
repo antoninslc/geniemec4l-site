@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /index.html
+Allow: /nous-soutenir
+Allow: /actualites
+Allow: /contact
+Disallow: /contact/success
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /img/budget.jpg
+
+sitemap: http://www.geniemec4l.fr/sitemap.xlm

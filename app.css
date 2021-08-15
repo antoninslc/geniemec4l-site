@@ -1,0 +1,553 @@
+/*common*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    font-size: 1em;
+    color: teal;
+}
+
+.topbar {
+    position: fixed;
+    width: 100%;;
+    background: #ffffff;
+    align-items: center;
+    z-index: 2;
+}
+.topbar-span {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.topbar-logo {
+    width: 100%;
+    font-size: 24px;
+    vertical-align: middle;
+    font-weight: bold;
+    background: #ffffff;
+    line-height: 3;
+    z-index: 2;
+}
+
+.topbar-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    
+}
+
+.topbar-btn_toogle {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+
+.topbar-btn_toogle::before,
+.topbar-btn_toogle::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    
+}
+
+.topbar-btn_toogle::before {
+    transform: translateY(-10px);
+}
+
+.topbar-btn_toogle::after {
+    transform: translateY(10px);
+}
+
+.topbar-nav {
+    text-align: center;
+    background-color: unset;
+    position: absolute;
+    top: -250px;
+    width: 80%;
+    background: #fff;
+    transition: top .3s ease-in-out;
+    z-index: 1;
+}
+
+.topbar-nav.is-open {
+    top: 80px;
+}
+
+.topbar-nav a {
+    width: 80%;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    margin: 0 auto;
+    font-weight: bold;
+    color: rgba(0, 128, 128, .6);
+}
+
+.topbar-nav a:hover {
+    background: rgba(0, 128, 128, .05);
+    color: rgba(0, 128, 128, .8);
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 900px) {
+    .topbar-span {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topbar-logo {
+        width: unset;
+    }
+    .topbar-btn {
+        display: none;
+    }
+
+    .topbar-nav {
+        transform: translateY(0);
+        position: unset;
+        text-align: unset;
+        width: unset;
+    }
+
+    .topbar-nav a {
+        display: unset;
+        margin: unset;
+        border-bottom: unset;
+        padding: 0 10px;
+        color: rgba(0, 128, 128, .4);
+    }
+
+    a.active {
+        color: rgba(0, 128, 128, 1);
+    }
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 1em;
+}
+
+/*accueil.html*/
+
+.homescreen {
+    height: 100vh;
+    background: beige;
+}
+
+.homescreen-text {
+    padding-top: 40vh;
+    padding-left: 10%;
+}
+
+.homescreen-text h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-align: unset;
+}
+
+.homescreen-text span {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.homescreen-text_buttons {
+    margin-top: 30px;
+}
+
+.homescreen-text_buttons a {
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 128, 128, .8);
+    color: #000;
+}
+
+.homescreen-text_buttons a:hover {
+    background: rgba(0, 128, 128, .4);
+    transition:  all .3s ease-in-out;
+}
+
+.main, .association-container, .main-beige {
+    margin: 0 auto;
+    padding: 40px 5%;
+    text-align: justify;
+    background: rgba(0, 128, 128, .2);
+}
+
+.association-container {
+    background: #ffffff;
+}
+
+.main-beige {
+    background: beige;
+}
+
+.imgflot img{
+    width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+
+.imgflot img{
+    float:right; 
+    margin-left: 10px; 
+    padding:5px; 
+    width: 50%;
+}
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+.bloc {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+}
+
+/*Nous Soutenir*/
+
+.void {
+    height: 72px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+img.nous-soutenir_img {
+    width: 100%;
+}
+
+.emplacements-img img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+
+.emplacements-img {
+    display: flex;
+}
+    
+
+img.nous-soutenir_img {
+    width: 50%;
+}
+
+img.prices {
+    height: 80%;
+}
+
+}
+
+/*Actualités*/ 
+
+.news {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 128, 128, .8);
+}
+
+.news span {
+    color: rgba(0, 128, 128, .8);
+}
+
+.news h2 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.news img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news {
+    width: 40%;
+    padding: 20px;
+}
+
+}
+
+/*Contact*/
+
+.contact-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.contacts {
+    margin-right: 20px;
+}
+
+.contacts h2 {
+    margin-top: 0;
+}
+
+.contacts a {
+    display: block;
+    margin-top: 10px;
+    color: #000 ;
+}
+
+.contacts .contacts-phone {
+    margin-top: 20px;
+}
+
+.contacts a::before {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(img/carbon_phone-filled.svg) center center / contain no-repeat;
+}
+
+.contacts .contacts-email::before {
+    background-image: url(img/fluent_mail-24-filled.svg);
+}
+
+.contacts .contacts-instagram::before {
+    background-image: url(img/ri_instagram-fill.svg);
+}
+
+.formcontainer {
+    width: 100%;
+}
+
+.form {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formcontent {
+    width: 45%;
+    margin-bottom: 5px;
+}
+
+.formsubject {
+    width: 100%px;
+    margin-top: 20px;
+}
+
+.formmessage {
+    width: 100%;
+}
+
+label {
+    font-size: 1em;
+    height: 60px;
+    color: #000000;
+    font-weight: 600;
+}
+
+label span {
+    color: red;
+}
+
+#input {
+    width: 100%;
+    height: 40px;
+    border: rgba(0, 128, 128, .8) 1px solid;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: beige;
+}
+
+input:focus {
+    outline: none;
+}
+
+.formsubject-container {
+    width: 100%;
+}
+
+#subjectinput {
+    width: 100%;
+    height: 40px;
+    
+    border: rgba(0, 128, 128, .8) 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: beige;
+
+}
+
+#messageinput {
+    width: 100%;
+    
+    border: rgba(0, 128, 128, .8) 1px solid;
+    padding: 10px;
+    resize: none;
+    background: beige;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.file {
+    width: 100%;
+    height: 80px;
+    text-align: left;
+}
+
+#fileinput {
+    font-size: 1em;
+}
+
+.send {
+    width: 120px;
+    height: 40px;
+    padding: 0;
+    font-size: 1em;
+    background-color: beige;
+    border: 1px rgba(0, 128, 128, .8) solid;
+    
+}
+
+.send:hover {
+    background: unset;
+}
+
+.required {
+    color: red;
+    font-size: 14px;
+    text-align: right;
+}
+
+input {
+    font-size: 1em;
+}
+
+#fileinput {
+    font-size: 1em;
+    margin-top: 20px;
+
+}
+
+label textarea {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (max-width: 1050px) {
+
+.contact-container {
+        display: unset;
+}
+
+.formcontainer {
+    margin-top: 40px;
+}
+
+.contacts h2 {
+    margin-top: 40px;
+}
+
+.form {
+    padding: 0;
+}
+}
+
+/*Transition*/
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2 {
+    transition-delay: .1s;
+}
+
+.reveal-3 {
+    transition-delay: .2s;
+}
+
+.reveal-4 {
+    transition-delay: .3s;
+}
+
+/*404*/
+
+.notfound {
+    text-align: center;
+    height: 100vh;
+}
+.notfound h1 {
+    font-size: 6em;
+    color: teal;
+}
+
+.notfound h2 {
+    margin-bottom: 40px;
+}
+
+.notfound a {
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 128, 128, .8);
+    color: #000;
+}
+
+.notfound a:hover {
+    background: rgba(0, 128, 128, .4);
+    transition:  all .3s ease-in-out;
+}
