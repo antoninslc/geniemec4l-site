@@ -13,18 +13,23 @@ a {
     text-decoration: none;
     color: unset;
     font-size: 1em;
-    color: teal;
+    color: rgb(0, 128, 128);
+}
+
+a:hover {
+    color: rgba(0, 128, 128, .6);
 }
 
 .topbar {
     position: fixed;
-    width: 100%;;
+    width: 100%;
     background: #ffffff;
     align-items: center;
     z-index: 2;
 }
 .topbar-span {
     width: 80%;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
 }
@@ -163,7 +168,7 @@ p {
 
 .homescreen {
     height: 100vh;
-    background: beige;
+    background: url(img/homescreen-1600.png) center center no-repeat;
 }
 
 .homescreen-text {
@@ -175,11 +180,13 @@ p {
     margin-bottom: 10px;
     font-size: 3em;
     text-align: unset;
+    color: #fff;
 }
 
 .homescreen-text span {
     font-size: 2em;
     font-weight: 600;
+    color: #fff;
 }
 
 .homescreen-text_buttons {
@@ -192,7 +199,8 @@ p {
     margin-right: 20px;
     padding: 5px 10px;
     border: 1px solid rgba(0, 128, 128, .8);
-    color: #000;
+    color: #fff;
+    background: rgba(0, 128, 128, .8);
 }
 
 .homescreen-text_buttons a:hover {
@@ -212,7 +220,36 @@ p {
 }
 
 .main-beige {
-    background: beige;
+    background: rgba(245, 245, 220, .5);
+}
+
+.association-container .bloc .news {
+    width: 100%;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: unset;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    background: rgba(245, 245, 220, .5)
+}
+
+.association-container .bloc .news img {
+    width: 40%;
+}
+
+.news-home {
+    width: 50%;
+}
+
+@media only screen and (max-width: 730px) {
+
+.association-container .bloc .news img,
+.news-home {
+    width: 100%;
+}
+    
 }
 
 .imgflot img{
@@ -399,7 +436,7 @@ label span {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    background: beige;
+    background: rgba(245, 245, 220, .5);
 }
 
 input:focus {
@@ -417,7 +454,7 @@ input:focus {
     border: rgba(0, 128, 128, .8) 1px solid;
     padding-left: 10px;
     padding-right: 10px;
-    background: beige;
+    background: rgba(245, 245, 220, .5);
 
 }
 
@@ -427,7 +464,7 @@ input:focus {
     border: rgba(0, 128, 128, .8) 1px solid;
     padding: 10px;
     resize: none;
-    background: beige;
+    background: rgba(245, 245, 220, .5);
 }
 
 textarea:focus {
@@ -449,7 +486,7 @@ textarea:focus {
     height: 40px;
     padding: 0;
     font-size: 1em;
-    background-color: beige;
+    background-color: rgba(245, 245, 220, .5);
     border: 1px rgba(0, 128, 128, .8) solid;
     
 }
