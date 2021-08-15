@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /index.html
 Allow: /nous-soutenir
-Allow: /actualites
+Allow: /journal-de-bord
 Allow: /contact
 Disallow: /contact/success
 
