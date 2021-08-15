@@ -174,8 +174,9 @@ p {
 }
 
 .homescreen-text {
-    padding-top: 40vh;
+    padding-top: 35vh;
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 .homescreen-text h1 {
@@ -547,7 +548,7 @@ label textarea {
 
 [class*="reveal-"] {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
 }
 
 .reveal-visible {
