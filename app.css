@@ -314,8 +314,12 @@ img.nous-soutenir_img {
     width: 50%;
 }
 
-img.prices {
-    height: 80%;
+.emplacements-img img {
+    width: 50%;
+}
+
+.prices {
+    height: 40%;
 }
 
 }
