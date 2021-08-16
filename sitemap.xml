@@ -6,28 +6,20 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://geniemec4l.fr/</loc>
+  <loc>https://www.geniemec4l.fr/</loc>
   <lastmod>2021-08-14T17:55:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://geniemec4l.fr/journal-de-bord</loc>
-  <lastmod>2021-08-14T17:55:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <loc>https://www.geniemec4l.fr/journal-de-bord</loc>
+  <lastmod>2021-08-14T17:55:00+00:00</lastmod>>
 </url>
 <url>
-  <loc>https://geniemec4l.fr/nous-soutenir</loc>
+  <loc>https://www.geniemec4l.fr/nous-soutenir</loc>
   <lastmod>2021-08-14T17:55:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://geniemec4l.fr/contact</loc>
+  <loc>https://www.geniemec4l.fr/contact</loc>
   <lastmod>2021-08-14T17:55:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
 </url>
 
 </urlset>
