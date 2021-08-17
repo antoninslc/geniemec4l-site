@@ -26,6 +26,9 @@ a:hover {
     background: #ffffff;
     align-items: center;
     z-index: 2;
+    top: 0px;
+    display: block;
+    transition: top .3s ease-in-out;
 }
 .topbar-span {
     width: 80%;
@@ -39,9 +42,9 @@ a:hover {
     font-size: 24px;
     vertical-align: middle;
     font-weight: bold;
-    background: #ffffff;
     line-height: 3;
     z-index: 2;
+    background: #ffffff;
 }
 
 .topbar-btn {
@@ -51,7 +54,7 @@ a:hover {
     align-items: center;
     width: 60px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out ;
     
 }
 
@@ -90,10 +93,10 @@ a:hover {
     text-align: center;
     background-color: unset;
     position: absolute;
-    top: -250px;
+    top: -170px;
     width: 80%;
     background: #fff;
-    transition: top .3s ease-in-out;
+    transition: top .8s cubic-bezier(0.5, 0, 0, 1);
     z-index: 1;
 }
 
