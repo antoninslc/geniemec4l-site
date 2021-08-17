@@ -26,7 +26,6 @@ a:hover {
     background: #ffffff;
     align-items: center;
     z-index: 2;
-    top: 0px;
     display: block;
     transition: top .3s ease-in-out;
 }
