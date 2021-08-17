@@ -28,19 +28,19 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
 })
 
 //navbar
-var departScroll = window.pageYOffset;
+//var departScroll = window.pageYOffset;
 
-    window.onscroll = function(a) {
+//    window.onscroll = function(a) {
 
-        var currentScrollpos = window.pageYOffset;
+//      var currentScrollpos = window.pageYOffset;
 
-        if (departScroll > currentScrollpos)
-            {
-                document.getElementById('navbar').style.top="0";
-            }
-        else {
-                document.getElementById('navbar').style.top="-72px";
-            }
+//        if (departScroll > currentScrollpos)
+//            {
+//                document.getElementById('navbar').style.top="0";
+//            }
+//       else {
+//                document.getElementById('navbar').style.top="-72px";
+//            }
 
-        departScroll = currentScrollpos;
-    }
+//        departScroll = currentScrollpos;
+//    }
