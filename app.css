@@ -451,7 +451,7 @@ label span {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(245, 245, 220, .5);
+    background: rgb(255, 255, 255);
 }
 
 input:focus {
@@ -469,7 +469,7 @@ input:focus {
     border: rgba(0, 128, 128, .8) 1px solid;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(245, 245, 220, .5);
+    background: rgb(255, 255, 255);
 
 }
 
@@ -479,7 +479,8 @@ input:focus {
     border: rgba(0, 128, 128, .8) 1px solid;
     padding: 10px;
     resize: none;
-    background: rgba(245, 245, 220, .5);
+    background: rgb(255, 255, 255);
+
 }
 
 textarea:focus {
@@ -501,7 +502,7 @@ textarea:focus {
     height: 40px;
     padding: 0;
     font-size: 1em;
-    background-color: rgba(245, 245, 220, .5);
+    background: rgb(255, 255, 255);
     border: 1px rgba(0, 128, 128, .8) solid;
     
 }
